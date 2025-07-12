@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do-List by Fatih</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="header-title">To Do List </h1>
+    <form id="todo-form">
+      <input type="text" id="task-input" placeholder="Tambahkan tugas..." required>
+      <input type="date" id="date-input" required>
+      <button type="submit" id="add-btn">+</button>
+    </form>
+    <div class="tabs">
+      <button data-filter="all" class="tab active">Semua</button>
+      <button data-filter="pending" class="tab">Belum diselesaikan</button>
+      <button data-filter="completed" class="tab">Selesai</button>
+    </div>
+    <input type="text" id="search" placeholder="Mencari tugas...">
+    <button id="clear-all" class="clear-btn">Hapus semua tugas</button>
+    <ul id="task-list"></ul>
+    <p class="footer">Created by Fatih</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
